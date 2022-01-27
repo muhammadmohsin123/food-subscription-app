@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import Dashboard from "../components/Header";
+
 import { Container, Grid, Paper, Typography } from "@mui/material/";
 import FoodTable from "../components/food-table/foodTable";
 export default function Home() {

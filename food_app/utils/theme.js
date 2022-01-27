@@ -16,7 +16,7 @@ const theme = {
     critical: "#5F2EEA",
     warning: "#ffc453",
     highlight: "#5bcdda",
-    success: " #4BDE97",
+    success: "#4BDE97",
     decorative: "#ffc96b",
   },
 };

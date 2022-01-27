@@ -147,6 +147,7 @@ export default function HeaderComponent(props) {
             </IconButton>
           </Toolbar>
           <Divider />
+
           <List>{mainListItems}</List>
           <Divider />
           {/* <List>{secondaryListItems}</List> */}
@@ -155,6 +156,7 @@ export default function HeaderComponent(props) {
         <Box
           component='main'
           sx={{
+            marginBottom: "20px",
             backgroundColor: (theme) =>
               theme.palette.mode === "light"
                 ? theme.palette.grey[100]
@@ -164,8 +166,8 @@ export default function HeaderComponent(props) {
             overflow: "auto",
           }}
         >
+          <Toolbar />
           {props.children}
-          {/* <Toolbar /> */}
         </Box>
       </Box>
     </ThemeProvider>

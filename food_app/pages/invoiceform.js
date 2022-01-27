@@ -109,24 +109,23 @@ function InvoiceForm() {
 
   return (
     <>
-      <AppBarComponent />
-
       <Grid
         container
         alignContent='center'
-        // sx={{ width: "100%", height: "100%" }}
+        sx={{ width: "100%", height: "100%" }}
         justifyContent='center'
+        sx={{ marginTop: "80px" }}
       >
         <Grid item lg={12}>
           <Typography
             variant='h3'
-            sx={{ textAlign: "center", color: "blue", marginBottom: "40px" }}
+            sx={{ textAlign: "center", color: "#1976d2", marginBottom: "40px" }}
           >
             Invo Invoices
           </Typography>
         </Grid>
-        <Grid item lg={12} sx={12}>
-          <Card>
+        <Grid item lg={10} sx={12}>
+          <Card sectioned>
             <IndexTable
               resourceName={resourceName}
               itemCount={customers.length}

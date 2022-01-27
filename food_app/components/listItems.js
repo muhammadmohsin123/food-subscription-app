@@ -9,6 +9,8 @@ import PeopleIcon from "@mui/icons-material/People";
 import BarChartIcon from "@mui/icons-material/BarChart";
 import LayersIcon from "@mui/icons-material/Layers";
 import AssignmentIcon from "@mui/icons-material/Assignment";
+import DescriptionIcon from "@mui/icons-material/Description";
+import ReceiptIcon from "@mui/icons-material/Receipt";
 import Link from "next/link";
 export const mainListItems = (
   <div>
@@ -16,7 +18,17 @@ export const mainListItems = (
       <ListItemIcon>
         <DashboardIcon />
       </ListItemIcon>
-      <ListItemText primary='Dashboard' />
+      <Link href='/'>
+        <ListItemText primary='Dashboard' />
+      </Link>
+    </ListItem>
+    <ListItem button>
+      <ListItemIcon>
+        <PeopleIcon />
+      </ListItemIcon>
+      <Link href='/users'>
+        <ListItemText primary='Users' />
+      </Link>
     </ListItem>
     <ListItem button>
       <ListItemIcon>
@@ -26,13 +38,13 @@ export const mainListItems = (
     </ListItem>
     <ListItem button>
       <ListItemIcon>
-        <ShoppingCartIcon />
+        <DescriptionIcon />
       </ListItemIcon>
       <ListItemText primary='Register Invoice' />
     </ListItem>
     <ListItem button>
       <ListItemIcon>
-        <PeopleIcon />
+        <ReceiptIcon />
       </ListItemIcon>
       <Link href='/invoice'>
         <ListItemText primary='Generate Invoice' />
